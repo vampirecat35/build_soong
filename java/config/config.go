@@ -78,7 +78,7 @@ func init() {
 
 	// ErrorProne can use significantly more memory than javac alone, give it a higher heap
 	// size (b/221480398).
-	exportedVars.ExportStringStaticVariable("ErrorProneHeapSize", "2048M")
+	exportedVars.ExportStringStaticVariable("ErrorProneHeapSize", "1024M")
 	exportedVars.ExportStringStaticVariable("ErrorProneHeapFlags", "-J-Xmx${ErrorProneHeapSize}")
 
 	exportedVars.ExportStringListStaticVariable("DexFlags", []string{
